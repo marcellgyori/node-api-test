@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/index.css" />
+        <title>API Tester SPA</title>
+    </head>
+    <body>
+        <div class="container">
+            <button onclick="fetchPosts()">Get Posts</button>
+            <button onclick="fetchPostById()">Get Post By ID</button>
+            <button onclick="fetchComments()">Get Comments</button>
+            <button onclick="fetchTags()">Get Tags</button>
+            <input
+                type="text"
+                id="inputField"
+                placeholder="Enter ID or tag name here"
+            />
+            <pre id="response"></pre>
+        </div>
+        <script src="scripts/index.js"></script>
+    </body>
+</html>
