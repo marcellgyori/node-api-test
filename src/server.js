@@ -29,7 +29,7 @@ app.use('/api/posts', commentsRouter);
 app.use('/api/tags', tagsRouter);
 
 // Error Handling
-app.use((err, req, res) => {
+app.use((err, req, res, next) => {
     console.error(err.stack);
     res.status(500).send({ error: 'An internal error occurred!' });
 });
